@@ -81,7 +81,7 @@ def main():
     st.sidebar.title("Zomato Information Hub")
     menu = st.sidebar.radio(
         "Select Section", 
-        ["Financial Summary", "Keyword Search", "Company Overview"]
+        ["Financial Summary", "Ask Me Anything", "Company Overview"]
     )
     
     # Financial Summary Section
@@ -130,8 +130,8 @@ def main():
         )
         st.plotly_chart(fig_profit, use_container_width=True)
     
-    # Keyword Search Section
-    elif menu == "Keyword Search":
+    # Ask Me Anything Section
+    elif menu == "Ask Me Anything":
         st.title("Information Discovery")
         
         # Search Input
