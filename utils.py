@@ -105,7 +105,7 @@ def extract_texts_concurrently(titles_links: Dict[str, Dict[str, str]]) -> Dict[
                     print(f"Error processing {title}: {e}")
 
         results[term] = term_results
-    print(f"type of results.values() is {type(list(results.values())[0])}")
+    print(f"results.values() is {list(results.values())[0]}")
     return list(results.values())[0]
 
 def isValidNews(url):
