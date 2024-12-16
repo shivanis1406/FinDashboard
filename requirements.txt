@@ -5,3 +5,4 @@ transformers
 torchvision
 torch
 google-search-results
+dotenv
