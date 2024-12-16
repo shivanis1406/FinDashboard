@@ -82,7 +82,7 @@ def main():
     st.sidebar.title("Zomato Information Hub")
     menu = st.sidebar.radio(
         "Select Section", 
-        ["Financial Summary", "Ask Me Anything", "Company Overview"]
+        ["Financial Summary", "Ask Me Anything", "Company Overview", "Sectoral Analysis"]
     )
     
     # Financial Summary Section
@@ -204,6 +204,18 @@ def main():
         
         for milestone in milestones:
             st.markdown(f"- {milestone}")
+    
+    # New Sectoral Analysis Section
+    elif menu == "Sectoral Analysis":
+        st.title("Sectoral Analysis")
+        
+        # Call get_news_analysis function with parameter 1
+        try:
+            get_news_analysis(1)     
+        except Exception as e:
+            st.error(f"Error fetching sectoral analysis: {e}")
+            st.info("Please ensure the news_analyzer module is correctly implemented.")
+
 
 if __name__ == "__main__":
     main()
