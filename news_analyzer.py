@@ -268,7 +268,7 @@ def get_news_analysis(scrape_news):
             print(f"selected terms : {selected_terms}")
             for topic in selected_terms:
                 selected_titles_links.update({topic : titles_links[topic]})
-            print(f"extracted_texts : {selected_titles_links}")
+            print(f"selected_titles_links : {selected_titles_links}")
 
             # Extract texts
             extracted_texts = extract_texts_concurrently(selected_titles_links)
