@@ -132,7 +132,7 @@ class EffectMapGenerator:
             st.plotly_chart(fig)
 
 
-def main(scrape_news):
+def get_news_analysis(scrape_news):
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     # Title of the application
