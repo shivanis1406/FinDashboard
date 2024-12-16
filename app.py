@@ -136,7 +136,7 @@ def main():
         st.title("Information Discovery")
         
         # Search Input
-        search_query = st.text_input("Enter a keyword to search across company documents")
+        search_query = st.text_input("Enter a keyword to search across company documents including annual reports, quarterly reports, earnings call transcripts, sustainability reports")
         
         if search_query:
             # Generate document corpus
