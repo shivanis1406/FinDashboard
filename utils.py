@@ -5,6 +5,8 @@ import json, os
 from serpapi import GoogleSearch
 from dotenv import load_dotenv
 from newspaper import Article
+# Use a pipeline as a high-level helper
+
 
 load_dotenv()
 
@@ -58,8 +60,8 @@ def generate_embeddings(text):
         return sentence_embedding
 
 def calc_cosine_similarity(text: str, term: str) -> bool:
-    # Placeholder function for calculating cosine similarity.
-    # Replace with your actual implementation.
+    #Mean Pooling: If you want to represent longer articles more effectively, consider using mean pooling of sentence embeddings. This involves averaging the embeddings of individual sentences in the article to create a single vector representation for the entire document3.
+    #Long Articles: For very long articles, it may be beneficial to break them down into paragraphs or sections and compare each with the topic. This can provide more granular insights into where specific topics are discussed within the text.
     return True  # Assuming all texts are relevant for demonstration purposes.
 
 def extract_texts_concurrently(titles_links: Dict[str, Dict[str, str]]) -> Dict[str, Dict[str, Dict[str, str]]]:
