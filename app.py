@@ -209,7 +209,7 @@ def main():
     elif menu == "Sectoral Analysis":        
         # Call get_news_analysis function with parameter 1
         try:
-            get_news_analysis(1)     
+            get_news_analysis(0)     
         except Exception as e:
             st.error(f"Error fetching sectoral analysis: {e}")
             st.info("Please ensure the news_analyzer module is correctly implemented.")
