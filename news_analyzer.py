@@ -212,9 +212,9 @@ def get_news_analysis(scrape_news):
     "impact of vehicle electrification on food delivery",
     "changing demographics of food delivery customers"
     ]
-    zomato_indirect_search_terms = [
-    "urbanization impact on food delivery",
-    "disposable income food delivery trends"]
+    #zomato_indirect_search_terms = [
+    #"urbanization impact on food delivery",
+    #"disposable income food delivery trends"]
                                     
     # Multiple-selection menu for search terms
     selected_terms = st.multiselect(
