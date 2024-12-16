@@ -4,4 +4,4 @@ matplotlib
 transformers
 torchvision
 torch
-serpapi
+google-search-results
