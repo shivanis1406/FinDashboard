@@ -207,8 +207,6 @@ def get_news_analysis(scrape_news):
     "smart packaging in grocery deliveries",
     "predictive analytics in grocery delivery",
     "supply chain innovations in quick-commerce",
-    "cross-border food delivery trends",
-    "crowdshipping for food delivery",
     "impact of vehicle electrification on food delivery",
     "changing demographics of food delivery customers"
     ]
