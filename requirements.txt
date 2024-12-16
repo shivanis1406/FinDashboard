@@ -11,3 +11,4 @@ lxml-html-clean
 plotly
 pymongo
 sentence_transformers
+openai
