@@ -270,6 +270,7 @@ def get_news_analysis(scrape_news):
             
             # Extract texts
             extracted_texts = extract_texts_concurrently(selected_titles_links)
+            print(f"extracted_texts : {extracted_texts}")
             
             # Print results
             for title, url_text in extracted_texts.items():
