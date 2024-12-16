@@ -271,14 +271,17 @@ def get_news_analysis(scrape_news):
             print(f"selected_titles_links : {selected_titles_links}")
 
             # Extract texts
-            extracted_texts = extract_texts_concurrently(selected_titles_links)
-            print(f"extracted_texts : {extracted_texts}")
+            extracted_texts_with_topics = extract_texts_concurrently(selected_titles_links)
             
             # Print results
-            for title, url_text in extracted_texts.items():
-                print(f"Title: {title}")
-                print(f"URL: {list(url_text.keys())[0]}")
-                #print(f"Text: {list(url_text.values())[0][:500]}...\n")  # Print first 500 characters
+            extracted_texts = {}
+            for topic, value in extracted_texts_with_topics.items():
+                for title, url_text in value.items():
+                    print(f"Title: {title}")
+                    print(f"URL: {list(url_text.keys())[0]}")
+                    #print(f"Text: {list(url_text.values())[0][:500]}...\n")  # Print first 500 characters
+                    extracted_texts[title] = {list(url_text.keys())[0] : list(url_text.values())[0]}
+            print(f"extracted_texts : {extracted_texts}")
 
             if not extracted_texts:
                 st.warning("No news found. Try a different company name.")
