@@ -6,3 +6,8 @@ torchvision
 torch
 google-search-results
 python-dotenv
+newspaper3k
+lxml-html-clean
+plotly
+pymongo
+sentence_transformers
