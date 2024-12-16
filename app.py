@@ -4,6 +4,7 @@ import numpy as np
 import random
 import plotly.express as px
 import plotly.graph_objs as go
+from news_analyzer import get_news_analysis
 
 # Dummy Data Generator
 class DummyDataGenerator:
