@@ -12,7 +12,7 @@ class DummyDataGenerator:
     def generate_financial_timeseries():
         # Generate quarterly financial data
         quarters = ['Q3 2023', 'Q4 2023', 'Q1 2024', 'Q2 2024', 
-                    'Q3 2024', 'Q4 2024']
+                    'Q3 2024']
         
         revenue = [2848, 3288, 3562, 4206, 4799]
         net_profit = [36, 138, 175, 253, 176]
