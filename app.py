@@ -11,11 +11,11 @@ class DummyDataGenerator:
     @staticmethod
     def generate_financial_timeseries():
         # Generate quarterly financial data
-        quarters = ['Q1 2022', 'Q2 2022', 'Q3 2022', 'Q4 2022', 
-                    'Q1 2023', 'Q2 2023', 'Q3 2023', 'Q4 2023']
+        quarters = ['Q3 2023', 'Q4 2023', 'Q1 2024', 'Q2 2024', 
+                    'Q3 2024', 'Q4 2024']
         
-        revenue = np.cumsum(np.random.normal(500, 100, len(quarters))) + 5000
-        net_profit = np.cumsum(np.random.normal(100, 50, len(quarters))) + 1000
+        revenue = [2848, 3288, 3562, 4206, 4799]
+        net_profit = [36, 138, 175, 253, 176]
         
         return pd.DataFrame({
             'Quarter': quarters,
@@ -26,12 +26,12 @@ class DummyDataGenerator:
     @staticmethod
     def generate_financial_summary():
         return {
-            'Revenue': f"₹{random.randint(1000, 5000)} Crore",
-            'Net Profit': f"₹{random.randint(100, 500)} Crore",
-            'Market Cap': f"₹{random.randint(10000, 50000)} Crore",
-            'EPS': round(random.uniform(10, 50), 2),
-            'P/E Ratio': round(random.uniform(20, 50), 2),
-            'ROE (%)': round(random.uniform(10, 25), 2)
+            'Revenue': "₹3254 Crore",
+            'Net Profit': "₹474 Crore",
+            'Market Cap': "₹46314 Crore",
+            'EPS': 25.39,
+            'P/E Ratio': 29.84,
+            'ROE (%)': 10.73
         }
     
     @staticmethod
